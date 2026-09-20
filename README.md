@@ -1,8 +1,10 @@
 # Website Replay · 网站回放
 
+简体中文 | [English](README.en.md)
+
 先探查，再列清单，保存公开前端，最后用证据验证离线副本。
 
-这是一个可安装的 Codex skill，同时附带 Node.js / Playwright 脚本。它保留网站已经发布的 HTML、样式、JavaScript 和数据，通过最小适配在本地回放。适用于图表、榜单、文档和多页网站的高保真离线保存。
+这是一个面向 Code Agents 的网站离线回放技能，采用 `SKILL.md` 组织工作流程，同时附带独立的 Node.js / Playwright 脚本。它保留网站已经发布的 HTML、样式、JavaScript 和数据，通过最小适配在本地回放。适用于图表、榜单、文档和多页网站的高保真离线保存。
 
 它不还原作者的工程源码，也不自动复制登录、支付、投票、实时生成或付费后台。多页 SPA、跨域资源、Next.js RSC、私有数据协议仍需要针对实际站点适配。
 
@@ -16,9 +18,28 @@
 
 “文件已下载”“能够打开”“交互正确”“视觉一致”分别核对。抽样通过不等于每页每个功能已完全复制。
 
-## 安装为 Skill
+## Agent 兼容性
 
-将本仓库放在 `~/.codex/skills/website-replay`，或安装到你的 Codex 技能目录。无需运行脚本即可使用其中的流程与诊断规范。
+核心脚本不依赖 Codex 专有 API。不同 Agent 的技能发现目录、调用方式和工具权限可能不同；目录结构兼容不代表已经完成实测。
+
+| Agent | 当前状态 |
+| --- | --- |
+| Codex | 已实际使用和验证；下方以 Codex 为安装示例 |
+| Claude Code | 使用 `SKILL.md` 的技能结构；可按其规范安装到 `.claude/skills/website-replay/`，尚未实测 |
+| Qoder | 尚未实测；需核对所用版本的技能支持、安装目录和调用方式 |
+| 其他 Code Agent | 支持 `SKILL.md` 时按其规范安装；否则可让 Agent 阅读文档并调用脚本 |
+
+`agents/openai.yaml` 是 Codex 的展示元数据，不是脚本运行依赖。其他 Agent 可使用 `SKILL.md` 和参考文档，无须依赖该文件。
+
+## 安装示例：Codex
+
+克隆到 Codex 的技能目录；默认示例如下，自定义技能目录时相应调整目标路径：
+
+```bash
+git clone https://github.com/lailoo/website-replay.git ~/.codex/skills/website-replay
+```
+
+让 Codex 重新加载技能列表后调用。无需运行脚本即可使用其中的流程与诊断规范；需要执行捕获或验证时，先按下一节安装运行依赖。
 
 调用示例：
 
