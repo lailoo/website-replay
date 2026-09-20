@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="256" height="256" viewBox="0 0 256 256" fill="none" role="img" aria-label="Website Replay animated icon">
+  <rect width="256" height="256" rx="56" fill="#171C22"/>
+  <rect x="43" y="51" width="170" height="154" rx="19" stroke="#F4F7F9" stroke-width="13"/>
+  <path d="M46 91H210" stroke="#F4F7F9" stroke-width="11"/>
+  <circle cx="65" cy="71" r="5" fill="#2BD9A2"/>
+  <circle cx="83" cy="71" r="5" fill="#F4F7F9"/>
+  <g>
+    <animateTransform attributeName="transform" type="rotate" from="0 128 151" to="360 128 151" dur="4s" repeatCount="indefinite"/>
+    <path d="M150.627 128.373A32 32 0 1 1 114.476 121.998" stroke="#2BD9A2" stroke-width="10" stroke-linecap="round"/>
+    <path d="M122.633 118.194L101.670 115.832L110.968 135.771Z" fill="#2BD9A2"/>
+  </g>
+  <path d="M121 139L139 151L121 163Z" fill="#F4F7F9"/>
+</svg>

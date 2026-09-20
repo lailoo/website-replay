@@ -1,5 +1,5 @@
 <p align="center">
-  <img src="assets/icon.png" alt="Website Replay" width="80" height="80">
+  <img src="assets/icon-animated.gif" alt="Website Replay" width="80" height="80">
 </p>
 
 <h1 align="center">Website Replay</h1>
