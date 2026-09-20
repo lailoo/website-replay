@@ -1,0 +1,18 @@
+{
+  "name": "website-replay",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "description": "Evidence-driven public website discovery, capture and offline verification skill",
+  "license": "MIT",
+  "engines": {"node": ">=20.19"},
+  "scripts": {
+    "test": "node scripts/smoke-test.mjs && node scripts/site-test.mjs",
+    "discover": "node scripts/site.mjs discover",
+    "capture": "node scripts/site.mjs capture",
+    "checklist": "node scripts/site.mjs checklist",
+    "verify": "node scripts/site.mjs verify",
+    "replay": "node scripts/site.mjs serve"
+  },
+  "dependencies": {"playwright": "1.58.2", "cheerio": "1.2.0", "pixelmatch": "7.2.0", "pngjs": "7.0.0", "range-parser": "1.3.0"}
+}

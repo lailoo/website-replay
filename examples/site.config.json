@@ -1,0 +1,17 @@
+{
+  "url": "https://example.com/",
+  "out": "../output/example",
+  "maxPages": 10,
+  "resourcePrefixes": ["/"],
+  "blockedPrefixes": ["/api/auth/", "/analytics/"],
+  "excludePrefixes": ["/api/", "/logout", "/checkout", "/account"],
+  "startUrls": [],
+  "sitemaps": [],
+  "followQueryLinks": false,
+  "statePathPatterns": [],
+  "scenarios": {},
+  "settleMs": 1000,
+  "delayMs": 250,
+  "viewport": {"width": 1440, "height": 1000},
+  "localBase": "http://127.0.0.1:5180"
+}

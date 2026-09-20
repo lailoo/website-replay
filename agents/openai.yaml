@@ -1,0 +1,4 @@
+interface:
+  display_name: "Website Replay · 网站回放"
+  short_description: "保存原站页面、交互组件与数据，构建并验证可交互的本地离线副本"
+  default_prompt: "使用 $website-replay 先探查指定网站并建立页面、状态与跳转清单，再保存公开前端并逐项完成离线和视觉验收。"
