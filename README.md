@@ -1,10 +1,22 @@
-<p><img src="assets/icon.png" alt="Website Replay" width="96" height="96"></p>
+<p align="center">
+  <img src="assets/icon.png" alt="Website Replay" width="80" height="80">
+</p>
 
-# Website Replay · 网站回放
+<h1 align="center">Website Replay</h1>
 
-简体中文 | [English](README.en.md)
+<p align="center"><strong>把网站带回本地，让交互继续。</strong></p>
 
-先探查，再列清单，保存公开前端，最后用证据验证离线副本。
+<p align="center">探查页面 · 保存前端 · 离线回放 · 逐项验证</p>
+
+<p align="center">
+  简体中文 &nbsp;·&nbsp; <a href="README.en.md">English</a>
+  <br>
+  <a href="#安装示例codex">快速开始</a> &nbsp;·&nbsp;
+  <a href="#工作流程">工作流程</a> &nbsp;·&nbsp;
+  <a href="SKILL.md">技能文档</a>
+</p>
+
+---
 
 这是一个面向 Code Agents 的网站离线回放技能，采用 `SKILL.md` 组织工作流程，同时附带独立的 Node.js / Playwright 脚本。它保留网站已经发布的 HTML、样式、JavaScript 和数据，通过最小适配在本地回放。适用于图表、榜单、文档和多页网站的高保真离线保存。
 

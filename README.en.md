@@ -1,10 +1,22 @@
-<p><img src="assets/icon.png" alt="Website Replay" width="96" height="96"></p>
+<p align="center">
+  <img src="assets/icon.png" alt="Website Replay" width="80" height="80">
+</p>
 
-# Website Replay
+<h1 align="center">Website Replay</h1>
 
-[简体中文](README.md) | English
+<p align="center"><strong>Bring websites home. Keep the interactions.</strong></p>
 
-Discover a website, build a checklist, capture its public frontend, and verify the offline copy with evidence.
+<p align="center">Discover · Capture · Replay · Verify</p>
+
+<p align="center">
+  <a href="README.md">简体中文</a> &nbsp;·&nbsp; English
+  <br>
+  <a href="#installation-example-codex">Quick start</a> &nbsp;·&nbsp;
+  <a href="#workflow">Workflow</a> &nbsp;·&nbsp;
+  <a href="SKILL.md">Skill documentation</a>
+</p>
+
+---
 
 Website Replay is a skill for coding agents, organized around `SKILL.md`, with standalone Node.js and Playwright scripts. It preserves a website's published HTML, styles, JavaScript, and data for local replay with minimal adaptation. It is intended for high-fidelity offline copies of charts, leaderboards, documentation, and multi-page websites.
 
