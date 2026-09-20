@@ -94,14 +94,6 @@ node scripts/replay.mjs snapshots/example 5180
 | `scripts/` | 单页及多页发现、捕获、回放和测试 |
 | `examples/` | 配置和显式交互场景示例 |
 
-## 验证范围
-
-`npm test` 使用两个可重复创建的本地测试站点，验证单页原始字节、多页发现与状态归类、断点续跑、关闭源站后的交互与 CSS/图片、截图对比、query 隔离、Range、资源损坏检测和路径限制。这验证了工具机制，不等同于第二个真实生产站点的完整复刻。
-
-真实小范围验证也已执行：`example.com` 静态页断网对比为零差异；`quotes.toscrape.com` 两页的 Next 跳转和内容断言通过，但外部 Google Fonts 未保存，视觉验收失败。完整结果和复现范围见 [验证记录](references/validation.md)。
-
-尚未完成独立 Agent 的真实整站复刻验收。欢迎贡献带有可公开重现步骤的适配和失败样例；不要把截图正常或构建通过当作全站通过。
-
 ## 已知边界
 
 - 当前通用捕获脚本保存同 origin 的公开 GET 资源。跨域 CDN、只读 POST 数据和 SPA 导航需要显式适配；文档包含处理方法。

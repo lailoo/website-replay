@@ -98,14 +98,6 @@ The skill and detailed reference documents are currently primarily in Chinese. T
 | `scripts/` | Single-page and multi-page discovery, capture, replay, and tests |
 | `examples/` | Configuration and explicit interaction scenarios |
 
-## Verification Scope
-
-`npm test` creates two reproducible local test sites. It checks raw bytes, multi-page discovery and state grouping, resumable capture, interactions and CSS/images with the source server shut down, screenshot comparison, query isolation, Range requests, corruption detection, and file-path restrictions. These tests validate the mechanisms, not a complete clone of another production website.
-
-Small live-site checks were also performed: the offline `example.com` static page had zero screenshot differences. On two `quotes.toscrape.com` pages, Next navigation and content assertions passed, but uncaptured external Google Fonts caused visual verification to fail. See the [validation record](references/validation.md) for results and scope.
-
-A complete real-site clone performed by an independent agent has not been validated. Contributions with publicly reproducible adapters and failure cases are welcome. A plausible screenshot or successful build is not proof of complete site coverage.
-
 ## Known Limitations
 
 - The generic capture script saves public, same-origin GET resources. Cross-origin CDNs, read-only POST data, and SPA navigation require explicit adaptation; the references explain the approach.
