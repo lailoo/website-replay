@@ -93,14 +93,12 @@ The skill and detailed reference documents are currently primarily in Chinese. T
 | [Capture and replay](references/capture-and-replay.md) | Bytes, requests, resource mapping, and minimal adaptation |
 | [Troubleshooting](references/difference-diagnosis.md) | Symptoms, evidence, fixes, and regression checks |
 | [Verification](references/verification.md) | Offline, interaction, visual, and production-preview checks |
-| [Artificial Analysis case study](references/artificial-analysis.md) | Actual discoveries, mistakes, and evidence for fixes |
+| [Dynamic page patterns](references/dynamic-site-patterns.md) | Data integrity, state discovery, navigation, and asynchronous APIs |
 | [Source extraction](references/source-extraction.md) | Distinguishing original project source, bundled modules, and rewrites |
 | `scripts/` | Single-page and multi-page discovery, capture, replay, and tests |
 | `examples/` | Configuration and explicit interaction scenarios |
 
 ## Verification Scope
-
-The workflow grew out of an actual Artificial Analysis offline-copy project. Site-specific logic and evidence are documented in the case study; they are not a promise of automatic support in the generic scripts.
 
 `npm test` creates two reproducible local test sites. It checks raw bytes, multi-page discovery and state grouping, resumable capture, interactions and CSS/images with the source server shut down, screenshot comparison, query isolation, Range requests, corruption detection, and file-path restrictions. These tests validate the mechanisms, not a complete clone of another production website.
 
@@ -120,4 +118,4 @@ A complete real-site clone performed by an independent agent has not been valida
 
 Run `npm test` before submitting changes. Include a reproducible minimal page, request, or anonymous data sample with fixes, explaining the observed behavior, evidence, and regression results. Document the supported scope and untested features of new site adapters.
 
-The tool code and project documentation are licensed under the [MIT License](LICENSE). Captured website code, images, data, fonts, and trademarks remain the property of their respective owners; MIT does not grant redistribution rights to those materials. This repository does not include Artificial Analysis snapshots, assets, datasets, or account information. Respect the target site's terms and authorized access scope; do not bypass authentication or paywalls.
+The tool code and project documentation are licensed under the [MIT License](LICENSE). Captured website code, images, data, fonts, and trademarks remain the property of their respective owners; MIT does not grant redistribution rights to those materials. This repository distributes tools, documentation, and tests, not third-party website snapshots or datasets. Respect the target site's terms and authorized access scope; do not bypass authentication or paywalls.

@@ -18,7 +18,7 @@
 | Range、缺失 query、未捕获 API | 通过 |
 | 人为损坏已保存资源后验收失败 | 通过 |
 
-这些 fixture 不依赖 Artificial Analysis，也不访问真实外站。CI 配置已提供；本次没有在 GitHub 托管 runner 上执行，不能将本机结果描述为远程 CI 通过。
+这些 fixture 在本地独立创建，不访问真实外站。CI 配置已提供；本次没有在 GitHub 托管 runner 上执行，不能将本机结果描述为远程 CI 通过。
 
 ## 真实静态页面
 

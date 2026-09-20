@@ -46,7 +46,7 @@ query 经常改变图表标签或服务器初始数据，不要丢掉。多个 H
 - 懒加载完成后等待所有捕获任务结束。对缺失资源给出具体记录，不以“下载了 N 个文件”代替完整性验证。
 - 对二进制、加密或压缩内容使用原始字节通道；特别是 `text/plain` 下承载的密文。必要时直接 fetch 并验证格式，而不是将 CDP 返回的文本再次编码。
 
-需要本案例的 AES-GCM/Next Flight 数据处理时读取 [references/artificial-analysis.md](references/artificial-analysis.md)。该格式仅是站点实例，不能套用到其他站点。
+涉及 Next Flight、二进制数据、隐藏状态或异步接口时读取 [references/dynamic-site-patterns.md](references/dynamic-site-patterns.md)。具体协议须按目标页面核对，不将示例套用到其他站点。
 
 ### 4. 本地回放与最小适配
 

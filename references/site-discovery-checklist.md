@@ -1,6 +1,6 @@
 # 整站探查、保存清单与逐项验收
 
-用于多页或整站离线化。目标是留下可以继续执行、可以追溯证据的工作清单；不是给 URL 数量换一个名称。具体站点案例见 [artificial-analysis.md](artificial-analysis.md) 的整站实践部分。
+用于多页或整站离线化。目标是留下可以继续执行、可以追溯证据的工作清单；不是给 URL 数量换一个名称。动态页面的处理方法见 [dynamic-site-patterns.md](dynamic-site-patterns.md)。
 
 ## 1. 先建立范围和初始清单
 
@@ -52,7 +52,7 @@
 {
   "pageId": "models",
   "stateId": "models-single-medium-speed-history",
-  "sourceUrl": "https://artificialanalysis.ai/models/prompt-options/single/medium?speed=output-speed-over-time",
+  "sourceUrl": "https://example.com/models/prompt-options/single/medium?speed=output-speed-over-time",
   "localUrl": "http://localhost:5174/models/prompt-options/single/medium?speed=output-speed-over-time",
   "discoveredBy": "browser-action",
   "entry": {

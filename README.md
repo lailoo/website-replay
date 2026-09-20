@@ -89,14 +89,12 @@ node scripts/replay.mjs snapshots/example 5180
 | [捕获与回放](references/capture-and-replay.md) | 字节、请求、资源映射和最小适配 |
 | [故障排查](references/difference-diagnosis.md) | 现象、证据、处理与回归检查 |
 | [验收规范](references/verification.md) | 断网、交互、视觉和生产预览 |
-| [Artificial Analysis 案例](references/artificial-analysis.md) | 实际发现过程、失误和修复依据 |
+| [动态页面处理](references/dynamic-site-patterns.md) | 数据完整性、状态发现、导航与异步接口 |
 | [源码提取说明](references/source-extraction.md) | 原始工程源码、构建模块与重写版的区别 |
 | `scripts/` | 单页及多页发现、捕获、回放和测试 |
 | `examples/` | 配置和显式交互场景示例 |
 
 ## 验证范围
-
-本流程来源于 Artificial Analysis 项目的实际离线保存经验。站点特定逻辑与实例证据记录在案例文档中，不作为通用脚本的一键适配承诺。
 
 `npm test` 使用两个可重复创建的本地测试站点，验证单页原始字节、多页发现与状态归类、断点续跑、关闭源站后的交互与 CSS/图片、截图对比、query 隔离、Range、资源损坏检测和路径限制。这验证了工具机制，不等同于第二个真实生产站点的完整复刻。
 
@@ -116,4 +114,4 @@ node scripts/replay.mjs snapshots/example 5180
 
 提交修改前运行 `npm test`。修复请附可重复的最小页面、请求或匿名数据样例，说明原站现象、修复依据和回归结果。涉及新站点时写清适配范围与尚未验证的功能。
 
-工具代码与本项目文档采用 [MIT License](LICENSE)。被保存的网站代码、图片、数据、字体和商标仍归原权利人所有，MIT 不授予这些内容的再发布权。本仓库不包含 Artificial Analysis 的网页快照、资产、数据或账号信息。请遵守目标网站条款和访问范围，不绕过身份验证或付费限制。
+工具代码与本项目文档采用 [MIT License](LICENSE)。被保存的网站代码、图片、数据、字体和商标仍归原权利人所有，MIT 不授予这些内容的再发布权。本仓库仅发布工具、文档与测试，不分发第三方网站快照或数据。请遵守目标网站条款和访问范围，不绕过身份验证或付费限制。
