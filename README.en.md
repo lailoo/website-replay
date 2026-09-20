@@ -1,3 +1,5 @@
+<p><img src="assets/icon.png" alt="Website Replay" width="96" height="96"></p>
+
 # Website Replay
 
 [简体中文](README.md) | English
